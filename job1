@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo "I am $0"
+#sleep $[ ( $RANDOM % 10 )  + 1 ]s
+sleep 3

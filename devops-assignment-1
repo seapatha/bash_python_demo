@@ -1,0 +1,24 @@
+Objective:
+
+The goal is to run a series of jobs in the shortest time possible.
+There are 10 jobs to be executed - job1, job2, job3, ... job10. Write a script
+that runs these jobs. For the purpose of the script, assume that the
+binaries named job1, job2, ... job10 exist in te path. Note the dependencies
+below. If one job depends on another, it must not be executed until that
+job finishes.
+
+Dependencies:
+
+1.  All other jobs depend on job1 to be complete.
+2.  job3, job4,.... job10 depend on job2 as well.
+3.  job6 depends on job4 and job5.
+4.  job10 depends on all other jobs.
+
+Notes:
+
+1.  The script must exit with error status if any job fails.
+2.  If one job fails, then the other jobs that are dependent on it must not be
+    executed.
+3.  Any scripting language can be used for this.
+4.  If you want to write a Jenkins pipeline or ansible script as well, that is
+    good.
